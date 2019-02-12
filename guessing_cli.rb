@@ -2,9 +2,10 @@ def run_guessing_game
   input = ""
   while input 
   puts "Guess a number between 1 and 6."
-  input = gets.downcase.chomp
+  input = gets.downcase.chomp.to_i
   random_numer = rand(1..6).to_i
-  
+  if random_numer == input
+    
 end 
 
 
