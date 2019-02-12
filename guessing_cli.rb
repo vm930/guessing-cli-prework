@@ -1,10 +1,18 @@
 # Code your solution here!
 
 def run_guessing_game
-  puts "Guess a number!"
-  user_input = gets.chomp
+  user_input = ""
+  while input 
+    puts "Guess a number!"
+    user_input = gets.chomp
+    if 
   
-  puts "You guessed the correct number!"
+      puts "You guessed the correct number!"
+    else
+      puts ""
+    end 
+    break if input == "exit"
+  end 
 end 
 
 
