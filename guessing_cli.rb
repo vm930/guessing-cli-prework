@@ -5,7 +5,7 @@ def run_guessing_game
   while input 
     puts "Guess a number!"
     user_input = gets.chomp
-    array.rand()
+    random_numer = rand 100
     if rand()user_input
   
       puts "You guessed the correct number!"
