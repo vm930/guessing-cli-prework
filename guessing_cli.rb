@@ -3,7 +3,7 @@
 def run_guessing_game
   input = ""
   while input 
-    puts "Guess a number!"
+    puts "Guess a number 1 - 6!"
     input = gets.chomp
     random_numer = rand(0..6)
     if random_numer.include?(user_input.to_i)
