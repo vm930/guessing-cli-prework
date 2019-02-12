@@ -5,7 +5,11 @@ def run_guessing_game
   input = gets.downcase.chomp.to_i
   random_numer = rand(1..6).to_i
   if random_numer == input
-    
+    puts "You guessed the correct number!"
+  else
+    puts ""
+  end 
+  break if input == "exit"
 end 
 
 
