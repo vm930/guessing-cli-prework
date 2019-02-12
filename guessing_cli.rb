@@ -4,14 +4,14 @@ def run_guessing_game
   input = ""
   while input 
     puts "Guess a number 1 - 6!"
-    input = gets.chomp
+    input = gets.downcase.chomp
     random_numer = rand(0..6)
     if random_numer.include?(user_input.to_i)
       puts "You guessed the correct number!"
     else
       puts "The computer guessed #{random_numer}"
     end 
-    break if input.downcase == "exit"
+    break if input == "exit"
   end 
 end 
 
