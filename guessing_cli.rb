@@ -45,5 +45,5 @@ def run_guessing_game
   else
     put "The computer guess #{random_numer}."
 end
-  
+end 
 end
