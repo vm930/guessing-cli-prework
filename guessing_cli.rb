@@ -1,10 +1,10 @@
 # Code your solution here!
 
 def run_guessing_game
-  user_input = ""
+  input = ""
   while input 
     puts "Guess a number!"
-    user_input = gets.chomp
+    input = gets.chomp
     random_numer = rand(0..6)
     if random_numer.include?(user_input.to_i)
       puts "You guessed the correct number!"
@@ -14,21 +14,6 @@ def run_guessing_game
     break input == "exit"
   end 
 end 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
